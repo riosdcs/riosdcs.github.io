@@ -16,32 +16,24 @@ body {
     margin: auto;
 }
 
-pre {
-    padding: 1em 1em;
-    border-radius: 0.5em;
-    box-shadow:
-        0 0.7px 1.4px rgba(0, 0, 0, 0.028),
-        0 1.8px 3.4px rgba(0, 0, 0, 0.04),
-        0 3.4px 6.4px rgba(0, 0, 0, 0.05),
-        0 6px 11.4px rgba(0, 0, 0, 0.06),
-        0 11.3px 21.3px rgba(0, 0, 0, 0.072),
-        0 27px 51px rgba(0, 0, 0, 0.1);
-}
-
 a:link {
     text-decoration: none;
 }
+
+/* *-general -> default.html */
 
 .nav-general {
     margin-top: 2em;
     margin-bottom: 1em;
 }
 
-.nav-index {
+.main-general {
     flex: 1;
 }
 
-.main-general {
+/* *-index -> intro.html */
+
+.nav-index {
     flex: 1;
 }
 
@@ -72,20 +64,20 @@ footer {
 
 .nav-link,
 .nav-link:visited,
-.back a,
-.back a:visited {
+.detail-back a,
+.detail-back a:visited {
     color: rgba(101, 102, 104, 0.842);
 }
 
 .nav-link:hover,
 .nav-link:active,
-.back a:hover,
-.back a:active {
+.detail-back a:hover,
+.detail-back a:active {
     color: black;
 }
 
 #current {
-    color: blue !important;
+    color: #0074D9 !important;
 }
 
 .detail-wrapper {
@@ -94,17 +86,34 @@ footer {
     min-height: 100vh;
 }
 
-.detail-middle {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    margin-top: 5em;
-    padding: 10px;
+@media all and (min-device-width: 850px) {
+    .detail-middle {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        margin-top: 5em;
+        padding: 10px;
+    }
+
+    .detail-back {
+        margin-right: 3em;
+        margin-top: 1.6em;
+    }
 }
 
-.detail-back {
-    margin-right: 3em;
-    margin-top: 1.6em;
+@media all and (max-device-width: 849px) {
+    .detail-middle {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        margin-top: 5em;
+        padding: 10px;
+    }
+
+    .detail-back {
+        margin-top: 1.6em;
+        margin-left: 1em;
+    }
 }
 
 .detail-main {
@@ -126,7 +135,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #post-content {
     padding-top: 1em;
-    flex: 1;
+    //flex: 1;
+}
+
+section {
+    line-height: 1.75;
+    text-align: justify;
 }
 
 .post-heading {
@@ -137,6 +151,14 @@ h1, h2, h3, h4, h5, h6 {
     font-style: italic;
 }
 
-.intro {
-    text-align: center;
+pre {
+    padding: 1em 1em;
+    border-radius: 0.5em;
+    box-shadow:
+        0 0.7px 1.4px rgba(0, 0, 0, 0.028),
+        0 1.8px 3.4px rgba(0, 0, 0, 0.04),
+        0 3.4px 6.4px rgba(0, 0, 0, 0.05),
+        0 6px 11.4px rgba(0, 0, 0, 0.06),
+        0 11.3px 21.3px rgba(0, 0, 0, 0.072),
+        0 27px 51px rgba(0, 0, 0, 0.1);
 }
