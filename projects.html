@@ -1,13 +1,11 @@
 ---
 title: Projects
 ---
-<h1>Projects</h1>
-
 <section>
     {% for project in site.projects %}
         <section>
-                <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
-                <p class="tech">{{ project.tech }}</p>
+                <h2 class="post-heading"><a href="{{ project.url }}">{{ project.name }}</a></h2>
+                <h3 class="tech">{{ project.tech }}</h3>
                 <p>{{ project.excerpt }}</p>
         </section>
     {% endfor %}
