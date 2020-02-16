@@ -127,6 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tech {
+    margin-top: 15px;
     color: rgba(101, 102, 104, 0.842);
 }
 
@@ -136,7 +137,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #post-content {
     padding-top: 1em;
-    //flex: 1;
 }
 
 section {
@@ -148,8 +148,26 @@ section {
     margin-bottom: -0.5em;
 }
 
+.project-heading {
+    margin-bottom: -10px;
+}
+
+.post-heading a,
+.project-heading a {
+    color: #0074D9;
+}
+
+.post-heading a:hover,
+.project-heading a:hover {
+    text-decoration: underline;
+}
+
+#reduce-tech {
+    margin-top: 0;
+}
+
 .post-date {
-    font-style: italic;
+    margin-top: 10px;
 }
 
 pre {
