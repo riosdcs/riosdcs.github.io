@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }} </title>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper-single-post">
+            <div class="nav-single-post">
+                <nav class="back">
+                    <a href="/index.html">home</a>
+                </nav>
+                <main class="main-single-post">
+                    {{ content }}
+                </main>
+            </div>
+            <div class="footer-single-post">
+                {% include footer.html %}
+            </div>
+        </div>
+    </body>
+</html>

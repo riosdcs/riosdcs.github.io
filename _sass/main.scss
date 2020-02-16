@@ -1,0 +1,140 @@
+@import "native.css";
+// @import "friendly.css";
+
+html {
+    margin-left: calc(100vw - 100%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Montserrat', sans-serif;
+
+    min-height: 100vh;
+    max-width: 850px;
+    margin: auto;
+}
+
+pre {
+    padding: 1em 1em;
+    border-radius: 0.5em;
+    box-shadow:
+        0 0.7px 1.4px rgba(0, 0, 0, 0.028),
+        0 1.8px 3.4px rgba(0, 0, 0, 0.04),
+        0 3.4px 6.4px rgba(0, 0, 0, 0.05),
+        0 6px 11.4px rgba(0, 0, 0, 0.06),
+        0 11.3px 21.3px rgba(0, 0, 0, 0.072),
+        0 27px 51px rgba(0, 0, 0, 0.1);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.nav-general {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.nav-index {
+    flex: 1;
+}
+
+.main-general {
+    flex: 1;
+}
+
+.main-index {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    align-self: center;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: center;
+
+    list-style: none;
+    margin-left: -2.5em; /* TODO: Make this cleaner. */
+}
+
+.navigation-list a {
+    display: inline-block;
+    padding: 1em;
+}
+
+.nav-link,
+.nav-link:visited,
+.back a,
+.back a:visited {
+    color: rgba(101, 102, 104, 0.842);
+}
+
+.nav-link:hover,
+.nav-link:active,
+.back a:hover,
+.back a:active {
+    color: black;
+}
+
+#current {
+    color: blue !important;
+}
+
+.wrapper-single-post {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.nav-single-post {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin-top: 5em;
+    padding: 10px;
+}
+
+.back {
+    margin-right: 3em;
+    margin-top: 1.6em;
+}
+
+.main-single-post {
+    margin-left: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+.tech {
+    color: rgba(101, 102, 104, 0.842);
+}
+
+#index-image {
+    margin-top: 6em;
+}
+
+#post-content {
+    padding-top: 1em;
+}
+
+.post-heading {
+    margin-bottom: -0.5em;
+}
+
+.post-date {
+    font-style: italic;
+}
+
+.intro {
+    text-align: center;
+}

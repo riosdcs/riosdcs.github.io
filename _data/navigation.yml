@@ -1,0 +1,10 @@
+- name: home
+  link: /
+- name: projects
+  link: /projects.html
+- name: blog
+  link: /blog.html
+- name: linkedin
+  link: https://www.linkedin.com/in/riosdcs
+- name: github
+  link: https://github.com/riosdcs

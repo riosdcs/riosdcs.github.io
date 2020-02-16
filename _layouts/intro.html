@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }} </title>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="main-index">
+            {{ content }}
+        </main>
+        <nav class="nav-index">
+            {% include navigation.html %}
+        </nav>
+        {% include footer.html %}
+</body>
+</html>
