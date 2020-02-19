@@ -65,14 +65,18 @@ footer {
 .nav-link,
 .nav-link:visited,
 .detail-back a,
-.detail-back a:visited {
+.detail-back a:visited,
+.error-home,
+.error-home:visited {
     color: rgba(101, 102, 104, 0.842);
 }
 
 .nav-link:hover,
 .nav-link:active,
 .detail-back a:hover,
-.detail-back a:active {
+.detail-back a:active,
+.error-home:hover,
+.error-home:active {
     color: black;
 }
 
@@ -184,4 +188,13 @@ pre {
         0 6px 11.4px rgba(0, 0, 0, 0.06),
         0 11.3px 21.3px rgba(0, 0, 0, 0.072),
         0 27px 51px rgba(0, 0, 0, 0.1);
+}
+
+.page-not-found {
+    margin: auto;
+    text-align: center;
+}
+
+.main-general .center {
+    margin-top: 25%;
 }
