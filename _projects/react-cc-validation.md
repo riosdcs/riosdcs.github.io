@@ -2,6 +2,7 @@
 name: React Credit Card Validation
 tech: React, CSS, HTML
 description: React component for determining the potential validity of a credit card number.
+date: "2020-02-21"
 ---
 ---
 

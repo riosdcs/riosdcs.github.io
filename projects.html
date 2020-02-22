@@ -2,11 +2,12 @@
 title: Projects
 ---
 <section>
-    {% for project in site.projects %}
+    {% assign items = site.projects | sort: 'date' | reverse %}
+    {% for item in items %}
         <section>
-                <h2 class="project-heading"><a href="{{ project.url }}">{{ project.name }}</a></h2>
-                <h3 class="tech" id="reduce-tech">{{ project.tech }}</h3>
-                <p>{{ project.description }}</p>
+                <h2 class="project-heading"><a href="{{ item.url }}">{{ item.name }}</a></h2>
+                <h3 class="tech" id="reduce-tech">{{ item.tech }}</h3>
+                <p>{{ item.description }}</p>
         </section>
     {% endfor %}
 </section>
