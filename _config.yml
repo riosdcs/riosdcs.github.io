@@ -1,6 +1,5 @@
 # theme: jekyll-theme-tactile
 excerpt_separator: <!--more-->
-highlighter: none
 
 markdown: kramdown
 kramdown:
