@@ -3,16 +3,25 @@
     <head>
         <meta charset="utf-8">
         <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="/assets/css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/mpe-subset.css">
     </head>
-    <body class="body">
-        <nav class="nav-general">
-            {% include navigation.html %}
-        </nav>
-        <main class="main-general">
-            {{ content }}
-        </main>
-        {% include footer.html %}
+    <body>
+        <div class="markdown-preview detail-wrapper">
+            <div class="detail-middle">
+                <div class="detail-back grid">
+                    <nav class="top">
+                        {% include navigation.html %}
+                    </nav>
+                </div>
+                <div class="detail-main">
+                    <main>
+                        {{ content }}
+                    </main>
+                </div>
+            </div>
+            <div class="detail-footer">
+                {% include footer.html %}
+            </div>
+        </div>
     </body>
 </html>

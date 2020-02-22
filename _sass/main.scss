@@ -1,6 +1,3 @@
-@import "native.css";
-// @import "friendly.css";
-
 html {
     margin-left: calc(100vw - 100%);
 }
@@ -9,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Montserrat', sans-serif;
 
     min-height: 100vh;
     max-width: 850px;
@@ -18,6 +15,7 @@ body {
 
 a:link {
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* *-general -> default.html */
@@ -197,4 +195,11 @@ pre {
 
 .main-general .center {
     margin-top: 25%;
+}
+
+html body footer {
+    font-family: Helvetica !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    color: #333 !important;
 }

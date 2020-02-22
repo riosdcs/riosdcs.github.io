@@ -1,0 +1,274 @@
+/*
+    University of Illinois/NCSA Open Source License
+
+    Copyright (c) 2019  Yiyi Wang
+    All rights reserved.
+
+    Developed by:     Yiyi Wang and many other contributors
+                    https://github.com/shd101wyy/markdown-preview-enhanced
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal with the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+    Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimers. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimers in the documentation and/or other materials provided with the distribution. Neither the names of Yiyi Wang, nor the names of its contributors may be used to endorse or promote products derived from this Software without specific prior written permission. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.
+*/
+
+html body {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.markdown-preview {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+html body>:first-child {
+    margin-top: 0;
+}
+
+html body .markdown-preview {
+    position: relative;
+    top: 0;
+}
+
+html body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+html body .markdown-preview {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (min-width: 914px) {
+html body .markdown-preview {
+    padding: 2em calc(50% - 457px + 2em);
+    padding-bottom: 0;
+}}
+
+@media screen and (max-width: 914px) {
+    html body .markdown-preview {
+        padding: 2em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html body .mardown-preview {
+        font-size: 14px !important;
+        padding: 1em;
+    }
+}
+
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body h6 {
+    line-height: 1.2;
+    margin-top: 1em;
+    margin-bottom: 16px;
+    color: #000;
+}
+
+html body h1 {
+    font-size: 2.25em;
+    padding-bottom: .3em;
+}
+
+html body h2 {
+    font-size: 1.75em;
+    padding-bottom: .3em;
+}
+
+html body h3 {
+    font-size: 1.5em;
+}
+
+html body h4 {
+    font-size: 1.25em;
+}
+
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5 {
+    font-weight: 600;
+}
+
+html body a {
+    color: #08c;
+    text-decoration: none;
+}
+
+html body code {
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-size: .85em !important;
+    color: #000;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    padding: .2em 0;
+}
+
+html body code::before,
+html body code::after {
+    letter-spacing: -0.2em;
+    content: "\00a0";
+}
+
+html body ul,
+html body ol {
+    padding-left: 2em;
+}
+
+html body li {
+    margin-bottom: 0;
+}
+
+html body p,
+html body blockquote,
+html body ul,
+html body ol,
+html body dl,
+html body pre {
+    margin-top: 0;
+}
+
+html body blockquote {
+    margin: 16px 0;
+    font-size: inherit;
+    padding: 0 15px;
+    color: #5c5c5c;
+    border-left: 4px solid #d6d6d6;
+}
+
+html body strong {
+    color: #000;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: #333;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.4;
+    -moz-tab-size: 8;
+    -o-tab-size: 8;
+    tab-size: 8;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+pre[class*="language-"] {
+    padding: .8em;
+    overflow: auto;
+    border-radius: 3px;
+    background: #f5f5f5;
+}
+
+/* personal modifications */
+
+.detail-back {
+    padding-left: .1em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.detail-middle {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.detail-footer {
+    margin-top: 2em;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+.tech,
+.post-date {
+    margin-top: -0.75em;
+}
+
+.tech {
+    color: #808080;
+}
+
+.post-date {
+    color: #5c5c5c;
+}
+
+.detail-back.grid {
+    margin-bottom: 2em;
+}
+
+.top li {
+    list-style-type: none;
+}
+
+ul.navigation-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    justify-items: center;
+}
+
+.nav-link,
+.nav-link:visited,
+.detail-back a,
+.detail-back a:visited,
+.error-home,
+.error-home:visited {
+    color: rgba(101, 102, 104, 0.842);
+}
+
+.nav-link:hover,
+.nav-link:active,
+.detail-back a:hover,
+.detail-back a:active,
+.error-home:hover,
+.error-home:active {
+    color: black;
+}
+
+#current {
+    color: #0074D9 !important;
+}
+
+.detail-main.error,
+.error-home {
+    text-align: center;
+}
+
+.detail-main.error {
+    margin-top: 15%;
+    margin-bottom: 2em;
+}

@@ -3,16 +3,23 @@
     <head>
         <meta charset="utf-8">
         <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="/assets/css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/mpe-subset.css">
     </head>
-    <body class="page-not-found">
-        <main class="main-general">
-            <div class="center">
-                {{ content }}
-                <a href="index.html" class="error-home">go home</a>
+    <body>
+        <div class="markdown-preview detail-wrapper">
+            <div class="detail-middle">
+                <div class="detail-main error">
+                    <main>
+                        {{ content }}
+                    </main>
+                </div>
+                <div class="detail-back error-home">
+                    <a href="{{ site.root }}/index.html">go home</a>
+                </div>
             </div>
-        </main>
-        {% include footer.html %}
+            <div class="detail-footer">
+                {% include footer.html %}
+            </div>
+        </div>
     </body>
 </html>
