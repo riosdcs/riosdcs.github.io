@@ -1,9 +1,9 @@
 - name: home
-  link: /index.html
+  link: /
 - name: projects
-  link: /projects.html
+  link: /projects
 - name: blog
-  link: /blog.html
+  link: /blog
 - name: linkedin
   link: https://www.linkedin.com/in/riosdcs
 - name: github

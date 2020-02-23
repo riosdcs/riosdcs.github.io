@@ -1,6 +1,7 @@
 ---
 title: Analyzing React Credit Card Validation 
 description: A detailed write-up covering the building of react-cc-validation.
+permalink: "/blog/react-cc-validation-writeup"
 ---
 
 # Motivation
