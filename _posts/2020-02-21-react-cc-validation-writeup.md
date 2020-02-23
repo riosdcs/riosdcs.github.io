@@ -102,9 +102,9 @@ To do this, we need to change the opacity of the corresponding `Logo` only. We u
 
 However, we needed a way to compute the `X` portion of `activeX` while the application was running. The answer lies in computed values:
 
-<pre class="language-javascript">
+```javascript
 ['active' + this.state.type]: true
-</pre>
+```
 
 Now, we were able to set active states to `true` or `false` in real time based on the input.
 
@@ -112,9 +112,9 @@ Now, we were able to set active states to `true` or `false` in real time based o
 
 While trying to use `parseInt`, `NaN` was being output by `console.log` tests. After placing additional `console.log` tests and following the flow of execution, the culprit was found:
 
-<pre class="language-javascript">
+```javascript
 let sum, temp = 0;
-</pre>
+```
 
 Well, then. Don’t forget to initialize your variables **properly**!
 

@@ -114,7 +114,7 @@ html body a {
     text-decoration: none;
 }
 
-html body code {
+html body code:not([class*="language-"]) {
     font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
     font-size: .85em !important;
     color: #000;
@@ -186,6 +186,21 @@ pre[class*="language-"] {
 }
 
 /* personal modifications */
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.language-css,
+.token.string,
+.style,
+.token.string {
+    background: none;
+}
+
+code[class*="language-"]:before,
+code[class*="language-"]:after {
+    content: none;
+}
 
 .detail-back {
     padding-left: .1em;
