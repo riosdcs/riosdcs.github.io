@@ -134,4 +134,4 @@ Expressions for conditions may only reference the variable that condition applie
 - `terraform fmt` - lines up all those `=` so you don't have to (works in current directory only)
 - `terraform validate` - checks files in the current directory for syntax and consistency
 
-I'm excited to keep learning about Terraform and figuring out the breadth and depth that it has. It also would pair well with other tools, such as Packer, Docker, and Kubernetes. So, maybe I'll go explore that next.
+I'm excited to keep learning about Terraform and figuring out the breadth and depth that it has. It also would pair well with other tools, such as Packer, Docker, and Kubernetes.
